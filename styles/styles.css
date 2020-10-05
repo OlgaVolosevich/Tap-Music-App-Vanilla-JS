@@ -1,5 +1,64 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.keys {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: 200px;
+      grid-template-rows: 200px;
+  width: 100%;
+}
+
+.keys__item {
+  cursor: pointer;
+}
+
+.mint {
+  background: #60d394;
+}
+
+.red {
+  background: #d36060;
+}
+
+.purple {
+  background: #c060d3;
+}
+
+.yellow {
+  background: #d3d160;
+}
+
+.blue {
+  background: #606bd3;
+}
+
+.light-blue {
+  background: #60c2d3;
 }
 /*# sourceMappingURL=styles.css.map */

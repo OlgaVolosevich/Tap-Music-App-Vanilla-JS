@@ -1,4 +1,53 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 200px;
+    width: 100%;
+}
+
+.keys__item {
+    cursor: pointer;
+}
+
+.mint {
+    background: #60d394;
+}
+
+.red {
+    background: #d36060;
+}
+
+.purple {
+    background: #c060d3;
+}
+
+.yellow {
+    background: #d3d160;
+}
+
+.blue {
+    background: #606bd3;
+}
+
+.light-blue {
+    background: #60c2d3;
 }
