@@ -5,16 +5,22 @@
 }
 
 .app {
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
-.header {
+header {
     text-align: center;
     margin-top: 100px;
+}
+
+.app__name{
+    margin-bottom: 20px;
 }
 
 .keys {
@@ -29,11 +35,11 @@
 }
 
 .mint {
-    background: #60d394;
+    background: #3FB8AF;
 }
 
-.red {
-    background: #d36060;
+.green {
+    background:#7FC7AF;
 }
 
 .purple {
@@ -41,13 +47,32 @@
 }
 
 .yellow {
-    background: #d3d160;
+    background: #DAD8A7;
 }
 
-.blue {
-    background: #606bd3;
+.light-pink {
+    background: #FF9E9D;
 }
 
-.light-blue {
-    background: #60c2d3;
+.pink {
+    background: #FF3D7F;
+}
+
+.circle {
+    z-index: -1;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    animation: up 1s ease-in-out;
+}
+
+
+@keyframes up {
+    50%{
+        top: 5%;
+    }
+    100% {
+        top: 100%;
+    }
 }
